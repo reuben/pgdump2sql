@@ -1,12 +1,13 @@
-usage: pgdump2sql.py [-h] [-I n] infile outfile
+usage: pgdump2sql.py [-h] [-I n] [-T table [table ...]] infile outfile
 
 Converts pgAdmin3 data dumps to DDL scripts
 
 positional arguments:
-  infile             The pgAdmin3 data dump file to convert
-  outfile            The output file to write to
+  infile                The pgAdmin3 data dump file to convert
+  outfile               The output file to write to
 
 optional arguments:
-  -h, --help         show this help message and exit
-  -I n, --sortidx n  The column to use when sorting data. Default is 0.
-  
+  -h, --help            show this help message and exit
+  -I n, --sortidx n     The column to use when sorting data. Default is 0.
+  -T table [table ...], --tables table [table ...]
+                        Tables to export
