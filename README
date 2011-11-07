@@ -1,6 +1,6 @@
 usage: pgdump2sql.py [-h] [-I n] [-T table [table ...]] infile outfile
 
-Converts pgAdmin3 data dumps to DDL scripts
+Converts Postgres data dumps to SQL scripts
 
 positional arguments:
   infile                The pgAdmin3 data dump file to convert

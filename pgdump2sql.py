@@ -12,7 +12,7 @@ COPYING for more details.
 import argparse
 import re as regex
 
-parser = argparse.ArgumentParser(description='Converts pgAdmin3 data dumps to DDL scripts')
+parser = argparse.ArgumentParser(description='Converts Postgres data dumps to SQL scripts')
 parser.add_argument('infile', type=file, help='The pgAdmin3 data dump file to convert')
 parser.add_argument('outfile', type=argparse.FileType('w'), help='The output file to write to')
 parser.add_argument('-I', '--sortidx', metavar='n', type=int, default=0, help='The column to use when sorting data. Default is 0.')
